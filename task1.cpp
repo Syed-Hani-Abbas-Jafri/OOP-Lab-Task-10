@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     string name, message;
 
-    cout << "=== Greeting Card Generator ===" << endl;
+    cout << "=Greeting Card Generator" << endl;
     cout << "Enter recipient's name: ";
     getline(cin, name);
     cout << "Enter your message: ";
