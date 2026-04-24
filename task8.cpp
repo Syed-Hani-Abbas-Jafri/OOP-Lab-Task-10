@@ -18,10 +18,9 @@ int main() {
     string partialLine;
     getline(article, partialLine);
 
-    cout << "=== Article Preview (from midpoint) ===" << endl;
+    cout << "Article Preview (from midpoint)" << endl;
     cout << "File size : " << fileSize << " bytes" << endl;
     cout << "Midpoint  : byte " << midPoint << endl;
-    cout << "----------------------------------------" << endl;
 
     string line;
     int lineCount = 0;
