@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     string name, email, choice;
 
-    cout << "=== Workshop Registration ===" << endl;
+    cout << "Workshop Registration" << endl;
 
     ofstream signup("signup.txt", ios::app);
     if (!signup) {
