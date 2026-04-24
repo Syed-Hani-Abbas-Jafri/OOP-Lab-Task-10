@@ -35,17 +35,15 @@ int main() {
         return 1;
     }
 
-    report << "========================================\n";
-    report << "      CONTENT QUALITY ANALYSIS REPORT   \n";
-    report << "========================================\n\n";
+    
+    report << "Content Quality Analysis Report\n";
     report << "Total Characters    : " << totalChars << "\n";
     report << "Total Words         : " << totalWords << "\n";
     report << "Total Lines         : " << totalLines << "\n";
     report << "Punctuation Marks   : " << totalPunct << "\n";
-    report << "\n========================================\n";
     report.close();
 
-    cout << "=== Analysis Complete ===" << endl;
+    cout << "Analysis Complete" << endl;
     cout << "Characters  : " << totalChars << endl;
     cout << "Words       : " << totalWords << endl;
     cout << "Lines       : " << totalLines << endl;
