@@ -11,7 +11,7 @@ struct Student {
 
 int main() {
     int n;
-    cout << "=== Student GPA Record System ===" << endl;
+    cout << "Student GPA Record System" << endl;
     cout << "How many students to register? ";
     cin >> n;
     cin.ignore();
@@ -44,15 +44,13 @@ int main() {
         return 1;
     }
 
-    cout << "\n=== Stored Student Records ===" << endl;
-    cout << "------------------------------------" << endl;
+    cout << "\nStored Student Record" << endl;
 
     Student s;
     while (inFile.read(reinterpret_cast<char*>(&s), sizeof(Student))) {
         cout << "Name : " << s.name << endl;
         cout << "ID   : " << s.id   << endl;
         cout << "GPA  : " << s.gpa  << endl;
-        cout << "------------------------------------" << endl;
     }
 
     inFile.close();
