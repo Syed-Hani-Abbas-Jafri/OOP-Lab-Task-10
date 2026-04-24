@@ -14,7 +14,7 @@ int main() {
     streampos fileSize = file.tellg();
     file.seekg(0, ios::beg);
 
-    cout << "=== File Debugger ===" << endl;
+    cout << "File Debugger" << endl;
     cout << "File size: " << fileSize << " bytes" << endl;
 
     string cmd;
@@ -39,18 +39,18 @@ int main() {
 
         file.seekg(offset, ios::beg);
         streampos posBefore = file.tellg();
-        cout << "Pointer position BEFORE read: " << posBefore << endl;
+        cout << "Pointer position before read: " << posBefore << endl;
 
         char buffer[101] = {};
         file.read(buffer, 100);
         int bytesRead = file.gcount();
 
         streampos posAfter = file.tellg();
-        cout << "Pointer position AFTER  read: " << posAfter << endl;
+        cout << "Pointer position after  read: " << posAfter << endl;
         cout << "Bytes read: " << bytesRead << endl;
-        cout << "--- Content ---" << endl;
+        cout << "-Content" << endl;
         cout.write(buffer, bytesRead);
-        cout << "\n--- End ---" << endl;
+        cout << "\nEnd" << endl;
 
         file.clear();
     }
