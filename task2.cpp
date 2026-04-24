@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     string line;
 
-    cout << "=== Personal Diary ===" << endl;
+    cout << "Personal Diary" << endl;
     cout << "Type your diary entries (type 'exit' to stop):" << endl;
 
     ofstream diary("diary.txt", ios::app);
