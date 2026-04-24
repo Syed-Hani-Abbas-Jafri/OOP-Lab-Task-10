@@ -21,7 +21,7 @@ int main() {
 
     secret.close();
 
-    cout << "=== Signal Scan Result ===" << endl;
+    cout << "Signal Scan Result" << endl;
     cout << "Total uppercase signal letters found: " << uppercaseCount << endl;
     return 0;
 }
