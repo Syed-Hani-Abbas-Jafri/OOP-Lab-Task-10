@@ -4,8 +4,8 @@
 using namespace std;
 
 int main() {
-    cout << "=== Backup Logger ===" << endl;
-    cout << "Enter log messages (type 'exit' to stop):" << endl;
+    cout << "Backup Logger" << endl;
+    cout << "Enter log message (exit to stop):" << endl;
 
     ofstream logFile("backup_log.txt", ios::app);
     if (!logFile) {
