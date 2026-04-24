@@ -11,7 +11,7 @@ int main() {
         return 1;
     }
 
-    cout << "=== Words in Story ===" << endl;
+    cout << "Words in Story" << endl;
 
     string line, word;
     while (getline(story, line)) {
